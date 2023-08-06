@@ -95,3 +95,23 @@ php artisan migrate:refresh
 php artisan migrate:rollback
 ```
 
+### 5. Route commands
+
+> Check route list
+```bash:
+php artisan route:list
+```
+> Filter the route list by URI
+```bash:
+php artisan route:list --path=items // example
+```
+> Filter the route list by method
+```bash:
+php artisan route:list --method=GET // example
+php artisan route:list --method=POST // example
+```
+> Filter the route list by method and URI
+```bash:
+php artisan route:list --method=GET --path=items // example
+php artisan route:list --method=POST --path=posts // example
+```
