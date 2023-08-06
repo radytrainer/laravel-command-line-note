@@ -1,5 +1,7 @@
 ## Laravel Artisan command line note
 
+
+### 1. Basic Artisan command
 > Install laravel
 
 ```bash:
@@ -15,6 +17,8 @@ php artisan serve (default port 8000) (1)
 php artisan serve --port=83           (2)
 php artisan serve --port 83           (3)         
 ```
+
+### 2. Create controller
 > Create  controller basic
 ```bash:
 php artisan make:controller YourController
@@ -28,7 +32,7 @@ php artisan make:controller YourController -r         (2)
 ```bash:
 php artisan make:controller YourController --api
 ```
-
+### 3. Create Migration table and Model
 > Create Migrations table
 ```bash:
 php artisan make:migration create_example_table
@@ -77,6 +81,7 @@ php artisan make:model YourModel -m -c -r                               (4)
 php artisan make:model YourModel -mcr                                   (5)
 
 ```
+### 4. Migrations actions
 > Migrate fresh command is used to drop all the tables from the database and then re-runs all the migration
 ```bash:
 php artisan migrate:fresh
