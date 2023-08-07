@@ -4,15 +4,15 @@
 ### 1. Basic Artisan command
 > Install laravel
 
-```bash:
+```bash
 composer create laravel/laravel your_project --prefer-dist
 ```
 > Check Laravel version
-```bash:
+```bash
 php artisan --version
 ```
 > Run Laravel project
-```bash:
+```bash
 php artisan serve (default port 8000) (1)
 php artisan serve --port=83           (2)
 php artisan serve --port 83           (3)         
@@ -20,11 +20,11 @@ php artisan serve --port 83           (3)
 
 ### 2. Create controller
 > Create  controller basic
-```bash:
+```bash
 php artisan make:controller YourController
 ```
 > Create resource controller
-```bash:
+```bash
 php artisan make:controller YourController --resource (1)
 php artisan make:controller YourController -r         (2)
 ```
